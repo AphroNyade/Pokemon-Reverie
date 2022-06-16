@@ -64,6 +64,8 @@ function changeHeader(headertitle) {
 } 
 
 function changeBackground(hex) {
+    let headerBackground = document.getElementById('header');
+    headerBackground.style.backgroundColor = hex;
     document.body.style.backgroundColor = hex;
 } 
 
