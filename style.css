@@ -1,17 +1,27 @@
+/* Palette Lightmode:
+Background: #FFD673
+Text: #030303
+Bubble background: #DCD6F7
+Bubble border: #545677
+Cutebubble background: #9886e4 */
+
+/* Palette Darkmode:
+Background: #030303
+Text: #E5EBEA
+Bubble Background: #111213
+Bubble Border: #DEE6EF
+Cutebubble: #921621*/
+
 body {
-    background-color: #E5EBEA;
+    background-color: #FFD673;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#030303;
     margin:0;
     padding:25px;
-}
-
-p {
+} p {
     font-size:18px;
     padding:0;
-}
-
-header {
+} header {
     width:100%;
     height:40px; 
     position:fixed; 
@@ -21,18 +31,20 @@ header {
     border-bottom: 1px solid #030303;
     display:flex; 
     justify-content:space-between;
-}
-
-header > input {
+} #searchinput {
     width:65%;
     height:50px;
-    font-size:20px;
+    font-size:24px;
     margin-left:-50px;
-}
-
-header > div {
+    border: 1px solid #030303;
+} header > div {
+    width:325px; 
+    text-align:center;
+} #headertitle {
+    margin:0;
+    margin-left: -75px;
+    font-size:30px;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 25px;
     letter-spacing: -3px;
     word-spacing: -4px;
     font-weight: 400;
@@ -40,111 +52,74 @@ header > div {
     font-style: normal;
     font-variant: normal;
     text-transform: capitalize;
-
-    width:325px; 
-    text-align:center;
-}
-
-#headertitle {
-    margin:0;
-    margin-left: -75px;
-    font-size:30px;
-}
-
-p#headertitle.lightmode>a:link, p#headertitle.lightmode>a:visited {
-    color:#030303;
-    text-decoration:none;
-}
-
-p#headertitle.darkmode>a:link, p#headertitle.darkmode>a:visited {
-    color:#E5EBEA;
-    text-decoration:none;
-}
-
-#lightsearchbutton {
-    height:60px; 
-    width:60px; 
-    margin-top:-3px;
-    display:inline;
-}
-
-#darksearchbutton {
-    height:60px; 
-    width:60px; 
-    margin-top:-3px;
-    display:none;
-}
-
-#lightflashlight {
-    height:76px; 
-    width:76px; 
-    margin-top:-11px; 
-    float:right;
-    display:inline;
-}
-
-#darkflashlight {
-    height:76px; 
-    width:76px; 
-    margin-top:-11px; 
-    float:right;
-    display:none;
-}
-
-a:link {
+} .displayflex {
+    display:flex; 
+    justify-content:space-around;
+} .displayflex2 {
+    display:flex;
+    justify-content:space-between;
+} .pkmimage {
+    height:160px;
+    width:160px; 
+    display:flex; 
+    justify-content:left;
+} a:link {
     text-decoration:none;
     color:#454bc4;
-}
-
-a:visited {
+} a:visited {
     text-decoration:none;
     color:#2731ec; 
-}
-
-.bubble {
-    background-color: #DCD6F7;
-    border: 3px solid rgb(84,86,119);
+} p#headertitle.lightmode>a:link, p#headertitle.lightmode>a:visited {
+    color:#030303;
+    text-decoration:none;
+} p#headertitle.darkmode>a:link, p#headertitle.darkmode>a:visited {
+    color:#E5EBEA;
+    text-decoration:none;
+} #lightsearchbutton {
+    height:60px; 
+    width:60px; 
+    margin-top:-3px;
+    display:inline;
+    border:0px;
+} #darksearchbutton {
+    height:60px; 
+    width:60px; 
+    margin-top:-3px;
+    display:none;
+} #lightflashlight {
+    height:76px; 
+    width:76px; 
+    margin-top:-11px; 
+    float:right;
+    display:inline;
+} #darkflashlight {
+    height:76px; 
+    width:76px; 
+    margin-top:-11px; 
+    float:right;
+    display:none;
+} .bubble {
     border-radius: 1em;
     padding: 0.8em;
     width:inherit;
-    margin:2px;
-}
-
-div.bubble {
-    vertical-align:text-top;
-    background-color: #DCD6F7;
-    color:#030303;
-    border: 3px solid rgb(84,86,119);
-    border-radius: 1em;
-    padding: 0.2em, 0.8em, 0.2em, 0.8em;
-    width:inherit;
-    min-width:10em;
-}
-
-.cutebubble {
-    background-color:#9886e4;
-    color:#030303;
+    margin:4px;
+}.cutebubble {
     margin:0;
     padding:0.2em;
     border-radius: 1em;
     min-width:min-content;
     text-align:center;
     font-weight:bold;
+} .bubble.lightmode {
+    background-color: #E6C5EF;
+    border: 6px solid #8494F7;
+} .cutebubble.lightmode {
+    background-color:#C55A9C;
+} .bubble.darkmode {
+    background-color: #111213;
+    border: 6px solid #DEE6EF;
+} .cutebubble.darkmode {
+    background-color:#921621;
 }
 
-.displayflex {
-    display:flex; 
-    justify-content:space-around;
-}
 
-.displayflex2 {
-    display:flex;
-    justify-content:space-between;
-}
-
-.pkmimage {
-    height:160px;
-    width:160px; 
-    display:flex; 
-    justify-content:left;
-}

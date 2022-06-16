@@ -12,26 +12,25 @@
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo_cresselia.png">
 </head>
 <body>
-<!-- TODO: HEADER BAR AVEC NOM + SEARCHBAR -->
+
 <!-- TODO: SYSTEM WITH 2 DIVS: NAVIGATION + CONTENT-->
-<!-- TODO: BUTTON SYSTEM FOR DARKMODE -->
 
 <header id="header">
     <div>
         <p id="headertitle" class="lightmode"><a href="index.html">The Pokémon</br>Reverie Wiki</a></p>
     </div>
     <input type="text" id="searchinput" placeholder="Search...">
-    <img src="./images/search_lightmode.png" alt="Search Button" id="lightsearchbutton" onclick="search('lightsearchbutton')">
-    <img src="./images/search_darkmode.png" alt="Search Button" id="darksearchbutton" onclick="search('darksearchbutton')">    
-    <img src="./images/lightmode.png" alt="Light/Night mode button" id="lightflashlight" onclick="changeLightMode('lightflashlight', 'darkflashlight')">
-    <img src="./images/darkmode.png" alt="Light/Night mode button" id="darkflashlight" onclick="changeLightMode('darkflashlight', 'lightflashlight')">
+    <input type="image" src="./images/search_lightmode.png" name="submit" alt="Search Button" id="lightsearchbutton">
+    <input type="image" src="./images/search_darkmode.png" name="submit" alt="Search Button" id="darksearchbutton">    
+    <img src="./images/lightmode.png" alt="Light/Night mode button" id="lightflashlight" onclick="lightToDark();">
+    <img src="./images/darkmode.png" alt="Light/Night mode button" id="darkflashlight" onclick="darkToLight();">
 </header>
 
-<div class="displayflex">
+<div class="displayflex" id="lightdisplay" style="display:inline">
     <div></div>
     <div>
-        <div class="bubble" style="margin-top:75px;">
-            <p class="cutebubble" style="font-size:30px">Welcome to the Pokémon Reverie Wiki</p>
+        <div class="bubble lightmode" style="margin-top:75px;">
+            <p class="cutebubble lightmode" style="font-size:30px">Welcome to the Pokémon Reverie Wiki</p>
             <div class="displayflex">
                 <img src="./images/cresselia.png" alt="Cresselia" id="Cresselia" class="pkmimage">
                 <div>
@@ -42,8 +41,8 @@
             </div>
         </div>
         <div class="displayflex">
-            <div class="bubble" style="width:32%">
-                <p class="cutebubble">Important Pages</p>
+            <div class="bubble lightmode" style="width:32%">
+                <p class="cutebubble lightmode">Important Pages</p>
                 <ul>
                     <li><a href="">Mega Evolutions</a></li>
                     <li><a href="">Regional Forms</a></li>
@@ -53,8 +52,8 @@
                 </ul>
             </div>
 
-            <div class="bubble" style="width:32%">
-                <p class="cutebubble">Download</p><br>
+            <div class="bubble lightmode" style="width:32%">
+                <p class="cutebubble lightmode">Download</p><br>
                 <a href="">Most recent version</a>
                 <p>Last Changelogs</p>
                 <ul>
@@ -66,11 +65,55 @@
                 <p style="font-weight:bold; margin-bottom:0%">The full changelog can be found <a href="">here</a></p>
             </div>
 
-            <div class="bubble" style="width:32%">
-                <p class="cutebubble">Join the Community</p>
+            <div class="bubble lightmode" style="width:32%">
+                <p class="cutebubble lightmode">Join the Community</p>
             </div>
         </div>
     </div>
 </div>
-</body>
-</html>
+
+<div class="displayflex" id="darkdisplay" style="display:none">
+    <div></div>
+    <div>
+        <div class="bubble darkmode" style="margin-top:75px;">
+            <p class="cutebubble darkmode" style="font-size:30px">Welcome to the Pokémon Reverie Wiki</p>
+            <div class="displayflex">
+                <img src="./images/cresselia.png" alt="Cresselia" id="Cresselia" class="pkmimage">
+                <div>
+                    <p>Pokémon Reverie is a fan-made Pokémon game. This game includes features such as new custom mega and regional evolutions, an entire region and a thick plot.</p>
+                    <p>The goal of this wiki is to provide a thorough guide of the game, with every information you might need, as well as detailed listing of each route and town's interactives.</p>
+                </div>
+                <img src="./images/darkrai.png" alt="Darkrai" id="Cresselia" class="pkmimage">
+            </div>
+        </div>
+        <div class="displayflex">
+            <div class="bubble darkmode" style="width:32%">
+                <p class="cutebubble darkmode">Important Pages</p>
+                <ul>
+                    <li><a href="">Mega Evolutions</a></li>
+                    <li><a href="">Regional Forms</a></li>
+                    <li><a href="">Pokemon Locations</a></li>
+                    <li><a href="">Characters</a></li>
+                    <li><a href="">Core Series Changes</a></li>
+                </ul>
+            </div>
+
+            <div class="bubble darkmode" style="width:32%">
+                <p class="cutebubble darkmode">Download</p><br>
+                <a href="">Most recent version</a>
+                <p>Last Changelogs</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam.</li>
+                    <li>Maiores aliquam magni soluta possimus dolore ex dolores reiciendis ipsam?</li>
+                    <li>Id exercitationem, veniam nemo minima atque deleniti dolorem tempore a.</li>
+                    <li>Impedit animi, sapiente nemo neque in officiis aspernatur rem molestias.</li>  
+                </ul>
+                <p style="font-weight:bold; margin-bottom:0%">The full changelog can be found <a href="">here</a></p>
+            </div>
+
+            <div class="bubble darkmode" style="width:32%">
+                <p class="cutebubble darkmode">Join the Community</p>
+            </div>
+        </div>
+    </div>
+</div>
