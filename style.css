@@ -135,6 +135,8 @@ body {
     height:calc(100%-75px);
 } #pkmlogo {
     display:flex; 
+    height: 252px;
+    width: 252px;
 } a:link.speciallink.lightmode, a:visited.speciallink.lightmode {
     color:#030303;
     text-decoration:none;
