@@ -18,6 +18,7 @@ body {
     color:#030303;
     margin:0;
     padding:25px;
+    height:100%;
 } p {
     font-size:18px;
     padding:0;
@@ -130,6 +131,10 @@ body {
     border-right: 1px solid #030303; 
     margin-right:15px; 
     height:2000px;
+} #pkmlogo {
+    display:flex; 
+} a:link.speciallink, a:visited.speciallink {
+    color:#030303;
+    text-decoration:none;
+    margin-left:-40px;
 }
-
-

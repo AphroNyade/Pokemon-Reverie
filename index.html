@@ -9,7 +9,7 @@
     <script src="function.js" defer></script>
 
     <title>The Pokémon Reverie Wiki</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/logo_cresselia.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/header/logo_cresselia.png">
 </head>
 <body>
 
@@ -20,30 +20,48 @@
         <p id="headertitle" class="lightmode"><a href="index.html">The Pokémon</br>Reverie Wiki</a></p>
     </div>
     <input type="text" id="searchinput" placeholder="Search...">
-    <input type="image" src="./images/search_lightmode.png" name="submit" alt="Search Button" id="lightsearchbutton">
-    <input type="image" src="./images/search_darkmode.png" name="submit" alt="Search Button" id="darksearchbutton">    
-    <img src="./images/lightmode.png" alt="Light/Night mode button" id="lightflashlight" onclick="lightToDark();">
-    <img src="./images/darkmode.png" alt="Light/Night mode button" id="darkflashlight" onclick="darkToLight();">
+    <input type="image" src="./images/header/search_lightmode.png" name="submit" alt="Search Button" id="lightsearchbutton">
+    <input type="image" src="./images/header/search_darkmode.png" name="submit" alt="Search Button" id="darksearchbutton">    
+    <img src="./images/header/lightmode.png" alt="Light/Night mode button" id="lightflashlight" onclick="lightToDark();">
+    <img src="./images/header/darkmode.png" alt="Light/Night mode button" id="darkflashlight" onclick="darkToLight();">
 </header>
 
 <div id="lightdisplay" style="display:flex; flex-direction:row">
-    <div style="display:inline; flex-direction:column; width:300px; background-color:#E6C5EF;padding-top:75px; padding-right:5px; padding-left:25px; padding-right:25px; margin-left:-25px; margin-top:-25px; border-right: 1px solid #030303; height:100%;" class="leftbox">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, in!</p>
-        <p>Quam eligendi nihil perspiciatis praesentium excepturi voluptatem. Dolorum, pariatur vero.</p>
-        <p>Sunt quam explicabo dolorem expedita vero amet dolore tempore animi.</p>
-        <p>Culpa voluptatibus repellat, perspiciatis minima ut tempore corporis dolor molestias.</p>
-        <p>Voluptatem eaque iste fugiat perferendis repellat corporis id impedit deleniti.</p>
+    <div style="flex-basis: 250px; flex-grow:0; flex-shrink:0; flex-direction:column; width:300px; background-color:#E6C5EF;padding-top:75px; padding-right:5px; padding-left:25px; padding-right:25px; margin-left:-25px; margin-top:-25px; border-right: 1px solid #030303; height:100%;" class="leftbox">
+        <img src="" alt="Pokemon Reverie Logo" id="pkmlogo"> <!-- src="./images/header/logo.png"-->
+        <p class="cutebubble lightmode">Navigation</p>
+        <ul style='list-style-type:none;'>
+            <li><a href="" class="speciallink">Main Page</a></li>
+            <li><a href="" class="speciallink">I'm feeling lucky!</a></li>
+            <li><a href="" class="speciallink">Meet the staff!</a></li>
+            <li onselectstart="return false" style="cursor:default">&nbsp;</li>
+        </ul>
+        <p class="cutebubble lightmode">Gameplay</p>
+        <ul style='list-style-type:none;'>
+            <li><a href="" class="speciallink">New Regional Forms</a></li>
+            <li><a href="" class="speciallink">Mega Evolutions</a></li>
+            <li><a href="" class="speciallink">New / Modified Moves</a></li>
+            <li onselectstart="return false" style="cursor:default">&nbsp;</li>
+        </ul>
+        <p class="cutebubble lightmode">Locations</p>
+        <ul style='list-style-type:none;'>
+            <li><a href="" class="speciallink">Routes</a></li>
+            <li><a href="" class="speciallink">Towns / Cities</a></li>
+            <li><a href="" class="speciallink">Pokemon Locations</a></li>
+            <li><a href="" class="speciallink">Team Buildings</a></li>
+            <li onselectstart="return false" style="cursor:default">&nbsp;</li>
+        </ul>
     </div>
     <div>
         <div class="bubble lightmode" style="margin-top:75px;">
             <p class="cutebubble lightmode" style="font-size:30px">Welcome to the Pokémon Reverie Wiki</p>
             <div class="displayflex">
-                <img src="./images/cresselia.png" alt="Cresselia" id="Cresselia" class="pkmimage">
+                <img src="./images/index/cresselia.png" alt="Cresselia" id="Cresselia" class="pkmimage">
                 <div>
                     <p>Pokémon Reverie is a fan-made Pokémon game. This game includes features such as new custom mega and regional evolutions, an entire region and a thick plot.</p>
                     <p>The goal of this wiki is to provide a thorough guide of the game, with every information you might need, as well as detailed listing of each route and town's interactives.</p>
                 </div>
-                <img src="./images/darkrai.png" alt="Darkrai" id="Cresselia" class="pkmimage">
+                <img src="./images/index/darkrai.png" alt="Darkrai" id="Cresselia" class="pkmimage">
             </div>
         </div>
         <div class="displayflex">
@@ -86,12 +104,12 @@
         <div class="bubble darkmode" style="margin-top:75px;">
             <p class="cutebubble darkmode" style="font-size:30px">Welcome to the Pokémon Reverie Wiki</p>
             <div class="displayflex">
-                <img src="./images/cresselia.png" alt="Cresselia" id="Cresselia" class="pkmimage">
+                <img src="./images/index/cresselia.png" alt="Cresselia" id="Cresselia" class="pkmimage">
                 <div>
                     <p>Pokémon Reverie is a fan-made Pokémon game. This game includes features such as new custom mega and regional evolutions, an entire region and a thick plot.</p>
                     <p>The goal of this wiki is to provide a thorough guide of the game, with every information you might need, as well as detailed listing of each route and town's interactives.</p>
                 </div>
-                <img src="./images/darkrai.png" alt="Darkrai" id="Cresselia" class="pkmimage">
+                <img src="./images/index/darkrai.png" alt="Darkrai" id="Cresselia" class="pkmimage">
             </div>
         </div>
         <div class="displayflex">

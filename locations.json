@@ -1,0 +1,74 @@
+{
+    "Loonar Town": [
+        {"name":"Treecko", "sprite":"/images/pixel-sprites/treecko.png"},
+        {"name":"Litten", "sprite":"/images/pixel-sprites/litten.png"},
+        {"name":"Squirtle", "sprite":"/images/pixel-sprites/squirtle.png"}
+    ],
+    "Route 1": {
+        "Day": [
+        {"name":"Rattata", "sprite":"/images/pixel-sprites/rattata.png", "rarity":"Common"},
+        {"name":"Cutiefly", "sprite":"/images/pixel-sprites/cutiefly.png", "rarity":"Common"},
+        {"name":"Nincada", "sprite":"/images/pixel-sprites/nincada.png", "rarity":"Rare"},
+        {"name":"Sewaddle", "sprite":"/images/pixel-sprites/sewaddle.png", "rarity":"Rare"},
+        {"name":"Buizel", "sprite":"/images/pixel-sprites/buizel.png", "rarity":"Very Rare"}
+        ],
+    "Night": [
+        {"name":"Poochyena", "sprite":"/images/pixel-sprites/poochyena.png", "rarity":"Common"},
+        {"name":"Alolan Rattata", "sprite":"/images/pixel-sprites/rattata-alola.png", "rarity":"Common"},
+        {"name":"Spikarak", "sprite":"/images/pixel-sprites/spinarak.png", "rarity":"Rare"},
+        {"name":"Venipede", "sprite":"/images/pixel-sprites/venipede.png", "rarity":"Rare"},
+        {"name":"Gastly", "sprite":"/images/pixel-sprites/gastly.png", "rarity":"Very Rare"}
+        ]
+    },
+
+    "Dark Star Woods": {
+        "Day": [
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""}
+    ],
+    "Night": [
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""}
+    ]
+    },
+
+    "Route 2": {
+        "Day": [
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""}
+    ],
+    "Night": [
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""}
+    ]
+    },
+
+    "Route 3": {
+        "Day": [
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""}
+    ],
+    "Night": [
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""},
+        {"name":"", "sprite":"/images/pixel-sprites/ .png", "rarity":""}
+    ]
+    }
+}

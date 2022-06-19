@@ -7,6 +7,8 @@ let lsb = 'lightsearchbutton', dsb = 'darksearchbutton';
 let hdr = 'headertitle', lbg = '#FFD673', dbg = '#030303';
 let ldp = 'lightdisplay', ddp = 'darkdisplay';
 let lcr = '#FFFFFF', dcr = '#030303';
+let darkrai = './images/header/logo_darkrai.png';
+let cresselia = './images/header/logo_cresselia.png';
 
 function lightToDark() {
     console.log('From light to dark');
@@ -17,6 +19,7 @@ function lightToDark() {
     changeBackground(dbg);
     changeBorder(lcr);
     changeDisplay(ldp, ddp);
+    changeIcon(darkrai)
 }
 
 function darkToLight() {
@@ -28,6 +31,7 @@ function darkToLight() {
     changeBackground(lbg);
     changeBorder(dbg);
     changeDisplay(ddp, ldp);
+    changeIcon(cresselia)
 } 
 
 function changeFlashlight(flashlight1, flashlight2) {
@@ -82,3 +86,6 @@ function changeDisplay(dis1, dis2) {
     otherDisplay.style.display = 'inline';
 }
 
+function changeIcon(link) {
+    document.querySelector("link[rel='shortcut icon']").href = link;
+}
