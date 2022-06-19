@@ -83,7 +83,7 @@ function changeDisplay(dis1, dis2) {
     let otherDisplay = document.getElementById(dis2);
 
     currentDisplay.style.display = 'none';
-    otherDisplay.style.display = 'inline';
+    otherDisplay.style.display = 'flex';
 }
 
 function changeIcon(link) {
