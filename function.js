@@ -7,8 +7,8 @@ let lsb = 'lightsearchbutton', dsb = 'darksearchbutton';
 let hdr = 'headertitle', lbg = '#FFD673', dbg = '#030303';
 let ldp = 'lightdisplay', ddp = 'darkdisplay';
 let lcr = '#FFFFFF', dcr = '#030303';
-let darkrai = './images/header/logo_darkrai.png';
-let cresselia = './images/header/logo_cresselia.png';
+let darkrai = 'images/header/logo_darkrai.png';
+let cresselia = 'images/header/logo_cresselia.png';
 
 function lightToDark() {
     console.log('From light to dark');
