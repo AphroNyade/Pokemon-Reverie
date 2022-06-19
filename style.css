@@ -133,8 +133,12 @@ body {
     height:2000px;
 } #pkmlogo {
     display:flex; 
-} a:link.speciallink, a:visited.speciallink {
+} a:link.speciallink.lightmode, a:visited.speciallink.lightmode {
     color:#030303;
+    text-decoration:none;
+    margin-left:-40px;
+} a:link.speciallink.darkmode, a:visited.speciallink.darkmode {
+    color:#E5EBEA;
     text-decoration:none;
     margin-left:-40px;
 }
